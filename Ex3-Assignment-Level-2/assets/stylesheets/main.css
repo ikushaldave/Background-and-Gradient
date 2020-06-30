@@ -1,0 +1,243 @@
+@import url(./reset.css);
+
+/* ====================================
+    Globals
+===================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font: 600 12px/1.5 sans-serif;
+    color: rgba(245, 245, 245, 0.671);
+    background-color: hsl(225,17%,14%);
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.social-box {
+    width: 23%;
+    padding: 20px;
+    background-color: hsl(228,29%,20%);
+    text-align: center;
+}
+
+.social-small-box {
+    flex: 1 1 40%;
+    height: 80px;
+    text-align: left;
+}
+
+.up {
+    color: hsl(173,45%,42%);
+    font-weight: 800;
+}
+
+.down {
+    color: hsl(348,88%,38%);
+    font-weight: 800;
+}
+
+.mb-200 {
+    margin-bottom: 200px;
+}
+
+/* ====================================
+    Links
+===================================== */
+
+a {
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.671);
+}
+
+/* ====================================
+    Icon
+===================================== */
+
+.facebook i,
+.twitter i {
+    color: hsl(208,95%,53%);
+    font-size: 24px;
+}
+
+.instagram i {
+    font-size: 24px;
+    color: hsl(16,84%,71%);
+}
+
+.youtube i {
+    font-size: 24px;
+    color: hsl(349,95%,39%);
+
+}
+
+i.fa-caret-up {
+    color: hsl(173,45%,42%);
+    font-size: 14px;
+}
+
+i.fa-caret-down {
+    color: red;
+    font-size: 14px;
+}
+
+.today-stat i.fas {
+    line-height: 40px;
+    align-items: center;
+}
+
+.today-stat i {
+    align-self: center;
+}
+
+/* ====================================
+    Typography
+===================================== */
+
+h1 {
+    font-size: 28px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 48px;
+    color: #fff;
+}
+
+h3 {
+    font: 600 15px/1.6 sans-serif;
+    color: hsl(231,21%,64%);
+}
+
+h4 {
+    font-size: 32px;
+}
+
+/* ====================================
+    Header
+===================================== */
+
+header {
+    background-color: hsl(232,19%,15%);
+}
+
+.dark-toggle {
+    width: 50px;
+    height: 24px;
+    background-image: linear-gradient(to right, hsl(204,57%,54%), hsl(153,62%,52%));
+    border-radius: 12px;
+    padding: 5px;
+    position: relative;
+    margin-left: 12px;
+}
+
+.dark-toggle::after {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 11px;
+    background-color: hsl(232,19%,15%);
+    position: absolute;
+    top: 2px;
+    right: 2.5px;
+}
+
+/* ====================================
+    Main
+===================================== */
+
+section {
+    margin: 25px auto;
+}
+
+.social-all-time {
+    position: absolute;
+    width: 100%;
+    top: 160px;
+}
+
+.user {
+    margin-bottom: 20px;
+}
+
+.username {
+    margin-left: 12px;
+}
+
+.count {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.count p {
+    letter-spacing: 2.5px;
+    font-weight: 400;
+}
+
+.analytic span {
+    margin-left: 12px;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.youtube {
+    border-top: 5px solid hsl(173,45%,42%);
+    border-radius: 5px 5px 0 0;
+}
+
+.instagram {
+    border-color: hsl(16,84%,71%);
+}
+
+.youtube {
+    border-color: hsl(349,95%,39%);
+}
+
+.overview {
+    margin-top: 100px;
+}
+
+.overview h1 {
+    margin: 25px auto;
+}
+
+.overview .facebook,
+.overview .twitter,
+.overview .instagram,
+.overview .youtube {
+    border: none;
+    margin: 12px 0;
+    border-radius: 5px;
+}
