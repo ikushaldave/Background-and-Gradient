@@ -29,7 +29,7 @@ h1 {
 }
 
 .flex {
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
