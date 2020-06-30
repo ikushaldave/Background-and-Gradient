@@ -1,0 +1,65 @@
+@import url(./reset.css);
+
+/* Globals */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font: 800 20px/1.5 sans-serif;
+    color: #fff;
+    background: rgb(142, 199, 104) url(../images/bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 32px;
+    color: rgb(14, 36, 51);
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.flex {
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.parent {
+    margin: 25px auto;
+}
+
+.box {
+    width: 380px;
+    height: 250px;
+    padding: 100px;
+    background-color: hsl(343,100%,50%);
+}
+
+.box-2 {
+    background: hsl(343,100%,50%) linear-gradient(to right, rgba(37, 23, 23, 0.7) 20%, hsl(343,100%,50%));
+}
+
+.box-3 {
+    background-image: radial-gradient(hsl(343,100%,50%) , rgba(37, 23, 23, 0.9));
+}
+
+.box-4 {
+    background: linear-gradient(to left top, rgba(255, 0, 72, 0.596),rgba(248, 234, 228, 0.6)), url('../images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 1100px;
+    height: 380px;
+    padding: 180px;
+}
