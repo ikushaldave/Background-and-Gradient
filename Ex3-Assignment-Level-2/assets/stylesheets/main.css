@@ -98,7 +98,6 @@ a {
 .youtube i {
     font-size: 24px;
     color: hsl(349,95%,39%);
-
 }
 
 i.fa-caret-up {
@@ -118,6 +117,26 @@ i.fa-caret-down {
 
 .today-stat i {
     align-self: center;
+}
+
+i.fa-instagram {
+    background: #E15691 linear-gradient(#FBBD66, #E24A93);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+i.fa-youtube {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: hsl(349,95%,39%);
+    color: hsl(228,29%,20%);
 }
 
 /* ====================================
@@ -210,19 +229,22 @@ section {
 }
 
 .facebook,
-.twitter,
-.instagram,
-.youtube {
-    border-top: 5px solid hsl(173,45%,42%);
+.twitter {
+    background: #252B43 linear-gradient(to right, #1BA3F1, #1BA3F1) no-repeat;
+    background-size: 100% 3%;
     border-radius: 5px 5px 0 0;
 }
 
 .instagram {
-    border-color: hsl(16,84%,71%);
+    background: #252B43 linear-gradient(to right, #FBBD66, #E24A93) no-repeat;
+    background-size: 100% 5px;
+    border-radius: 5px 5px 0 0;
 }
 
 .youtube {
-    border-color: hsl(349,95%,39%);
+    background: #252B43 linear-gradient(to right, #C3022F, #C3022F) no-repeat;
+    background-size: 100% 3%;
+    border-radius: 5px 5px 0 0;
 }
 
 .overview {

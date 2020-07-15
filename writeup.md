@@ -229,8 +229,10 @@ text - The background is painted within (clipped to) the foreground text. (Exper
 ```css
 div {
     border: 10px dashed #000;
-    background-clip: text;
+    background-color: green;
     -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: transparent;
 }
 ```
@@ -406,15 +408,13 @@ div {
 
 The first value will be the foremost background image and the last value will the rearmost background image. The value between first and last will sit between the foremost and rearmost background image.
 
-> Note here I used alpha value if not used it will hideout entire Images with linear-gradient colors.
-
 The multiple background concept is with images only. You cannot combine the `background-color` and `background-image` at the same time.
 
 However, we can apply color and image both in the background at the same time on any element.
 
 ```css
 div {
-    background: linear-gradient(to right, rgba(0, 255, 0 , 0.2), rgba(0, 0, 255 , 0.2)), url(./image.png) 0 0 no-repeat;
+  background: linear-gradient(to right, rgba(0, 255, 0 , 0.2), rgba(0, 0, 255 , 0.2)), url(./image.png) 0 0 no-repeat;
     background-size: cover;
 }
 ```
@@ -422,3 +422,5 @@ div {
 ![Multiple Background Images](./images/multiple-background-images-color.png)
 
 Instead of applying just one background color, and background image, use the concept of the background image. The gradient is also a type of background image and keeps both values of color the same.
+
+> Note here I used alpha value if not used it will hideout entire Images with linear-gradient colors.
